@@ -1,0 +1,64 @@
+/* GERAL */
+
+/* Importando a fonte "Poppins" do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Configurando estilizações gerais para todos os elementos */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando a seção "main" */
+main {
+    background-color:#0000ff;
+    height: 100vh;
+    color: #ffffff;
+    font-family: Poppins;
+    text-align: center;
+}
+
+
+.calculadora {
+    position: absolute;
+    background-color: #000000cc;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: #1f1f1f;
+    border: none;
+    color: #ffffff;
+}
+    /* Definindo estilizações especiais para os elementos da classe botão para quando o mouse estiver em cima deles */
+    .botao:hover{
+        background-color: #000000;
+}
+    .botao.enter {
+        height: 106px;
+}
+    .botao.zero {
+        width: 106px;
+}
+
+
+#resultado {
+    background-color: #ffffff;
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: #000000;
+    text-align: right;
+    padding: 5px;
+}
